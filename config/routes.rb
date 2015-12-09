@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  get 'site_pages/home'
+  root 'site_pages#home'
 
-  get 'site_pages/about'
+  get '/about', to: 'site_pages#about'
 
-  get 'site_pages/services'
+  get '/services', to: 'site_pages#services'
 
-  get 'site_pages/gallery'
+  get '/gallery', to: 'site_pages#gallery'
 
-  get 'site_pages/contact'
+  get 'contact', to: 'site_pages#contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
