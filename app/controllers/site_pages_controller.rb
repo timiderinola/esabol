@@ -5,10 +5,7 @@ class SitePagesController < ApplicationController
   def about
   end
 
-  def services
-  end
-
-  def gallery
+  def blog
   end
 
   def contact

@@ -3,9 +3,7 @@ Rails.application.routes.draw do
 
   get '/about', to: 'site_pages#about'
 
-  get '/services', to: 'site_pages#services'
-
-  get '/gallery', to: 'site_pages#gallery'
+  get '/blog', to: 'site_pages#blog'
 
   get 'contact', to: 'site_pages#contact'
 

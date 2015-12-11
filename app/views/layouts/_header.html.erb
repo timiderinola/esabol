@@ -1,4 +1,4 @@
-<header id="upper_bar" class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+<header id="navbar" class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
   <%= image_tag 'esabol_logo.png', alt: 'ESABOL', class: 'logo' %>
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -14,11 +14,10 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <nav class="collapse navbar-collapse" id="navbar-collapse">
         <ul id="nav-links" class="nav navbar-nav navbar-right">
-          <li><%= link_to 'home', root_path %><span class="sr-only">(current)</span></li>
+          <li><%= link_to 'home', root_path, class: 'selected' %></li>
           <li><%= link_to 'about', about_path %></li>
-          <li><%= link_to 'services', services_path %></li>
-          <li><%= link_to 'gallery', gallery_path %></li>
           <li><%= link_to 'contact', contact_path %></li>
+          <li><%= link_to 'blog', blog_path %></li>
         </ul>
       </nav><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

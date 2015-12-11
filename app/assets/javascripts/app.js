@@ -18,21 +18,7 @@ $(document).ready(function() {
   });
 });
 
-// $(".box").bgswitcher({
-//   images: [
-//     "../../img/fullimage8.jpg",
-//     "../../img/fullimage1.jpg",
-//     "../../img/fullimage2.jpg",
-//     "../../img/fullimage3.jpg",
-//     "../../img/fullimage4.jpg",
-//     "../../img/fullimage5.jpg",
-//     "../../img/fullimage6.jpg",
-//     "../../img/fullimage7.jpg"    
-//   ], // Background images
-//   effect: "fade", // fade, blind, clip, slide, drop, hide
-//   interval: 5000, // Interval of switching
-//   loop: true, // Loop the switching
-//   shuffle: false, // Shuffle the order of an images
-//   duration: 2000, // Effect duration
-//   easing: "swing" // Effe`ct easing
-// });
+$( "#nav-links li a" ).click(function() {
+    $("#nav-links li a").removeClass("selected");
+    $(this).addClass("selected");
+});
