@@ -44,6 +44,10 @@ body {
     padding: 0;
 }
 
+address {
+
+}
+
 /* Home Page */
 
 #row-1, #row-2, #row-3 {
@@ -242,6 +246,8 @@ body {
 
 /* Contact Page */
 
-#contact {
-
+#contact-details {
+    padding-right: 3em;
+    background: url("map-rope.png") no-repeat;
+    background-size: contain;
 }

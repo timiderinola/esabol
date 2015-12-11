@@ -1,47 +1,52 @@
-<div class="row" id="contact">
-  <div class="col-sm-8">
-    <h2>Contact</h2>
-    <p>
-      We would love to hear from you. Fill out the form below to make a booking or ask questions.
-      Your email and phone number will be kept private.
-    </p>
+<% provide(:title, 'Contact') %>
+<% provide(:row_info, 'Contact Us') %>
 
-    <form role="form" class="jumbotron">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="form-group">
-            <label for="name">Name:<span class="required-field">*</span></label>
-            <input type="text" id="name" class="form-control" placeholder="First and last name please">
-            <label for="phone">Phone:</label>
-            <input type="number" id="phone" class="form-control" placeholder="What is your phone number?">
-            <label for="email">Email:<span class="required-field">*</span></label>
-            <input type="text" id="email" class="form-control" placeholder="What is your email address?">
+<div class="container">
+  <h2>Contact</h2>
+  <div class="row" id="contact">
+    <div class="col-sm-8">
+      <p>
+        We would love to hear from you. Fill out the form below to make a booking or ask questions.
+        Your email and phone number will be kept private.
+      </p>
+
+      <form role="form" class="jumbotron">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="name">Name:<span class="required-field">*</span></label>
+              <input type="text" id="name" class="form-control" placeholder="First and last name please">
+              <label for="phone">Phone:</label>
+              <input type="number" id="phone" class="form-control" placeholder="What is your phone number?">
+              <label for="email">Email:<span class="required-field">*</span></label>
+              <input type="text" id="email" class="form-control" placeholder="What is your email address?">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <label for="comments">Comment/Questions:</label>
+            <textarea id="comments" placeholder="Write your message here!" class="form-control"></textarea>
           </div>
         </div>
-        <div class="col-sm-6">
-          <label for="comments">Comment/Questions:</label>
-          <textarea id="comments" placeholder="Write your message here!" class="form-control"></textarea>
-        </div>
-      </div>
-      <button class="btn btn-default" role="button">Submit</button>
-    </form>
-  </div>
+        <button class="btn btn-default" role="button">Submit</button>
+      </form>
+    </div>
 
-  <div class="col-sm-4">
-    <div class="jumbotron">
-      <h2>Company Info</h2>
-      <address>
-        ESABOL Juice and Smoothie Bar,<br>
-        Dwarf Shop 3,<br>
-        FUTA Community Shopping Plaza,<br>
-        Oba-Nla Campus, FUTA<br>
-      </address>
-      <address>
-        ESABOL Juice and Smoothie Bar,<br>
-        FUTA Sports Complex,<br>
-        Behind Hilltop Auditorium,<br>
-        Oba-Nla Campus, FUTA.
-      </address>
+    <div class="col-sm-4">
+      <div class="jumbotron container" id="contact-details">
+        <h2>Company Info</h2>
+        <address>
+          ESABOL Juice and Smoothie Bar,<br>
+          Dwarf Shop 3,<br>
+          FUTA Community Shopping Plaza,<br>
+          Oba-Nla Campus, FUTA<br>
+        </address>
+        <address>
+          ESABOL Juice and Smoothie Bar,<br>
+          FUTA Sports Complex,<br>
+          Behind Hilltop Auditorium,<br>
+          Oba-Nla Campus, FUTA.
+        </address>
+      </div>
     </div>
   </div>
 </div>
