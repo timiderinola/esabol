@@ -16,9 +16,15 @@ $(document).ready(function() {
     stopOnHover: true,
     transitionStyle: "fade"
   });
-});
 
-$( "#nav-links li a" ).click(function() {
+  $( "#nav-links li a" ).click(function() {
     $("#nav-links li a").removeClass("selected");
     $(this).addClass("selected");
+  });
+
+  $("#sidebar-slides").owlCarousel({
+    singleItem: true,
+    lazyLoad : true,
+    navigation : true
+  });
 });

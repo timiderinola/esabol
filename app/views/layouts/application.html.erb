@@ -12,12 +12,12 @@
       <%= render 'layouts/shim' %>
     </head>
     <body>
-        <%= render 'layouts/header' %>
         <div class="container-fluid" id="content">
+          <%= render 'layouts/header' %>
           <%= render 'layouts/carousel' %>
           <%= render 'layouts/row_one' %>
           <%= yield %>
+          <%= render 'layouts/footer' %>
         </div>
-        <%= render 'layouts/footer' %>
     </body>
 </html>

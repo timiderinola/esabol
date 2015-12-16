@@ -1,5 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 @media screen and (min-width: 760px) {
@@ -101,7 +103,7 @@ address {
   border-radius: 50%;
 }
 
-#pictures .item img, #quotes .item blockquote {
+#pictures .item img {
   display: block;
   width: 100%;
   height: auto;
@@ -209,6 +211,7 @@ address {
 }
 
 .footer {
+    margin-top: 2em;
   border-top: 1px solid #CCFF33;
   bottom: 0;
   padding: 1em;
@@ -248,6 +251,32 @@ address {
 
 #contact-details {
     padding-right: 3em;
-    background: url("map-rope.png") no-repeat;
-    background-size: contain;
+}
+
+#comments {
+    height: 150px;
+    resize: none;
+}
+
+/* About page */
+
+#profesan {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+.quotes {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+#sidebar-slides .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#sidebar-slides .item {
+    margin: 3px;
 }
