@@ -4,12 +4,13 @@
 <div class="container">
   <h2>Contact</h2>
   <div class="row" id="contact">
+    <%= render 'shared/flash_msg' %>
     <div class="col-sm-8">
       <p>
         We'd love to hear from you. Fill the form below to make a booking or ask questions.
         Your details will be kept private.
       </p>
-      <div class="jumbotron">
+      <div class="jumbotron" id="form_container">
         <%= simple_form_for @contact do |f| %>
             <div class="row">
               <div class="col-sm-6">
@@ -20,6 +21,9 @@
                   <%= f.phone_field :phone, class: 'form-control', placeholder: 'What is your phone number?' %>
                   <%= f.label :email %>
                   <%= f.email_field :email, required: true, class: 'form-control', placeholder: 'What is your email address?' %>
+                  <div class= "hidden">
+                    <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+                  </div>
                 </div>
               </div>
               <div class="col-sm-6">

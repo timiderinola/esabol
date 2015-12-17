@@ -253,9 +253,13 @@ address {
     padding-right: 3em;
 }
 
-#comments {
+#contact_comments {
     height: 150px;
     resize: none;
+}
+
+#form_container {
+    padding: 4em;
 }
 
 /* About page */
