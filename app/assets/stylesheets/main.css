@@ -239,12 +239,21 @@ address {
   margin: 0 0 10px;
 }
 
-.contact-info li.phone a {
+.contact-info li.phone #first-phone {
   background-image: url('phone.png');
 }
 
 .contact-info li.mail a {
   background-image: url('mail.png');
+}
+
+.phone a {
+    display: inline-block;
+    padding-right: 4px;
+}
+
+#second-phone {
+    padding: 0;
 }
 
 /* Contact Page */
