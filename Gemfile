@@ -51,6 +51,7 @@ gem 'ckeditor'
 gem 'ckeditor-imgur'
 gem 'nav_lynx'
 gem 'font-awesome-rails'
+gem 'friendly_id', '~> 5.1.0'
 
 # Use unicorn as the app server
 # gem 'unicorn'

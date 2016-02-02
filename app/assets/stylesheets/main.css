@@ -10,6 +10,10 @@ body {
         border-bottom: 3px solid #CCFF33;
     }
 
+    #fat-menu li a:hover {
+        border-bottom: none;
+    }
+
     .logo {
         height: 53px;
     }
@@ -25,13 +29,9 @@ body {
 
 .alert {
     position: absolute;
-    width: 97%;
-    top: 120px;
+    width: 100%;
+    top: 55px;
     z-index: 30;
-    box-shadow: 0.5em 0 1em 5px #CCFF33;
-    -moz-box-shadow: 0.5em 0 1em 5px #CCFF33;
-    -webkit-box-shadow: 0.5em 0 1em 5px #CCFF33;
-    -o-box-shadow: 0.5em 0 1em 5px #CCFF33;
 }
 
 .logo {
@@ -192,6 +192,21 @@ address {
     color: #fff;
     padding: 0.5em;
     border-radius: 15px;
+}
+
+#show-post img {
+    margin: 1em auto;
+    display: block;
+    max-width: 70%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 /* Sidebar */
