@@ -38,6 +38,11 @@ GEM
     bootstrap-will_paginate (0.0.10)
       will_paginate
     builder (3.2.2)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     ckeditor (4.1.6)
       cocaine
       orm_adapter (~> 0.5.0)
@@ -80,6 +85,7 @@ GEM
       actionmailer (>= 3.2, < 5)
       activemodel (>= 3.2, < 5)
     mime-types (2.4.3)
+    mini_magick (4.3.6)
     mini_portile2 (2.0.0)
     minitest (5.5.1)
     multi_json (1.11.0)
@@ -169,6 +175,7 @@ DEPENDENCIES
   bcrypt-ruby (= 3.1.2)
   bootstrap-sass (= 3.1.1.0)
   bootstrap-will_paginate
+  carrierwave
   ckeditor
   ckeditor-imgur
   coffee-rails (~> 4.0.0)
@@ -178,6 +185,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   mail_form
+  mini_magick
   nav_lynx
   pg
   rails (= 4.1.8)
