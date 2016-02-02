@@ -47,6 +47,10 @@ gem 'bcrypt-ruby', '3.1.2'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'rails-html-sanitizer'
+gem 'ckeditor'
+gem 'ckeditor-imgur'
+gem 'nav_lynx'
+gem 'font-awesome-rails'
 
 # Use unicorn as the app server
 # gem 'unicorn'
