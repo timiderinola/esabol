@@ -11,9 +11,6 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.friendly.find(params[:id])
-    title = @post.title
-    @post = Post.find_by_title(title)
   end
 
   def edit

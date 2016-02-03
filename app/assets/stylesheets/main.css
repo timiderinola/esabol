@@ -182,7 +182,7 @@ address {
 .blog-page-title {
     background: #66A342;
     color: #fff;
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 15px;
 }
 
@@ -190,8 +190,18 @@ address {
     background: #66A342;
     text-align: center;
     color: #fff;
-    padding: 0.5em;
+    padding: 0.3em;
     border-radius: 15px;
+}
+
+.blog-title small {
+    color: #fff;
+    font-size: 0.5em;
+}
+
+.comment {
+    font-size: 1em;
+    margin-left: 1em;
 }
 
 #show-post img {

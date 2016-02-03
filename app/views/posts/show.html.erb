@@ -6,17 +6,15 @@
   <div class="row">
     <div id="post" class="col-sm-9">
       <div id="show-post">
-        <h3 class="blog-title"><%= @post.title %></h3>
-        <p class="byline">
-          <small>
-            by <%= @post.author %>
-            <span class="pull-right">
-              posted on <%= friendly_date @post.created_at %>
-              <% if logged_in? %>
-                 | <%= link_to 'Edit', edit_post_path %>
-            <% end %>
-          </span>
-          </small>
+        <h3 class="blog-title">
+          <%= @post.title %>
+          <small><p>by <%= @post.author %></p></small>
+        </h3>
+        <p class="pull-right">
+          posted on <%= friendly_date @post.created_at %>
+          <% if logged_in? %>
+             | <%= link_to 'Edit', edit_post_path %>
+          <% end %>
         </p>
         <p class="text-justify"><%= raw @post.content %></p>
         <br>
@@ -49,7 +47,8 @@
         <li>
           <h2>Recent Posts</h2>
           <ul>
-            <% Post.all.each do |post| %>
+            <% posts = Post.all.order('created_at DESC') %>
+            <% posts.each do |post| %>
                 <li><%= link_to post.title, post %></li>
             <% end %>
           </ul>

@@ -27,14 +27,19 @@
         </address>
       </div>
       <div class="col-sm-4">
-        <h4>We're also at:</h4>
-        <address>
-          <strong>ESABOL Juice and Smoothie Bar</strong><br>
-          Dwarf Shop 3<br>
-          FUTA Community Shopping Plaza<br>
-          Oba-Nla Campus, FUTA<br>
-          Akure, Nigeria.
-        </address>
+        <h4>Quick Links</h4>
+        <% @post = Post.last %>
+        <ul style="list-style: none; padding-left: 7px;">
+          <li><%= link_to 'Home', root_path %></li>
+          <li><%= link_to 'About', about_path %></li>
+          <li><%= link_to 'Contact', contact_path %></li>
+          <% if @post %>
+            <li><%= link_to @post.title, @post %></li>
+          <% end %>
+          <% unless logged_in? %>
+            <%= link_to 'Admin Login', login_path %>
+          <% end %>
+        </ul>
       </div>
     </div>
     <br>
