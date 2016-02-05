@@ -6,5 +6,5 @@
 
 <% if logged_in? %>
     <%= link_to 'Remove comment', [comment.post, comment],
-            method: :delete, data: { comfirm: 'Are you sure?' } %>
+            method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>

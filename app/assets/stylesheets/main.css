@@ -199,6 +199,12 @@ address {
     font-size: 0.5em;
 }
 
+.post-content {
+    padding: 0.9em;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
 .comment {
     font-size: 1em;
     margin-left: 1em;
@@ -228,30 +234,17 @@ address {
 #sidebar ul {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: circle;
 }
 
 #sidebar li {
-  margin: 0;
+  margin: 8px 4px;
   padding: 0;
-}
-
-#sidebar li ul {
-  margin-left: 20px;
-  padding: 0;
-}
-
-#sidebar li li {
-  margin: 0 0 0 0;
-  margin: 0 0 0 0;
-  line-height: 35px;
-  border-bottom: 1px #66A342 dotted;
 }
 
 #sidebar h2 {
   height: 35px;
   font-size: 18px;
-  background: url(img04.gif) no-repeat right 30%;
   border-bottom: 2px #66A342 dashed;
 }
 

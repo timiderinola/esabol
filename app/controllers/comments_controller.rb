@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
   def create
-    @post = Post.find(params[:post_id])
+    @post = Post.friendly.find(params[:post_id])
 
     if @post.comments.create(comment_params)
       redirect_to @post,
@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
 
   def destroy
     @comment = Comment.find(params[:id])
-    @post = Post.find(params[:post_id])
+    @post = Post.friendly.find(params[:post_id])
 
     @comment.destroy
     respond_to do |format|
