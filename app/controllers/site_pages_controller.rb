@@ -7,9 +7,7 @@ class SitePagesController < ApplicationController
 
   def blog
     @post = Post.friendly.last
-    if @post
-      redirect_to @post
-    else
+    unless @post
       redirect_to root_path,
                   notice: 'Sorry, there is currently no blog post. Contact us if you have something to post.'
     end
