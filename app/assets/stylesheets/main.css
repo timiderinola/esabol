@@ -2,6 +2,9 @@ body {
   font-family: 'Roboto', sans-serif;
     overflow-y: scroll;
     overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0%;
 }
 
 @media screen and (min-width: 760px) {
@@ -21,6 +24,19 @@ body {
 
 .selected {
     border-bottom: 3px solid #CCFF33;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.inline-image {
+    height: 20px;
+    width: auto;
+}
+
+.stud {
+    border-bottom: 3px solid transparent;
 }
 
 #navbar {
@@ -179,11 +195,16 @@ address {
   padding-left: 25px;
 }
 
-.blog-page-title {
-    background: #66A342;
-    color: #fff;
-    padding: 0.5em;
-    border-radius: 15px;
+/*.blog-page-title {*/
+    /*background: #66A342;*/
+    /*color: #fff;*/
+    /*padding: 0.5em;*/
+    /*border-radius: 15px;*/
+/*}*/
+
+.blog_logo {
+    height: 100px;
+    width: auto;
 }
 
 .blog-title {
