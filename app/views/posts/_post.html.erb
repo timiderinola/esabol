@@ -31,11 +31,9 @@
 
         <%= form_for [@post, @post.comments.build] do |f| %>
             <div class='form-group'>
-              <%= f.label :author %><br>
               <%= f.text_field :author, class: 'form-control', placeholder:'Your name', required:'required' %>
             </div>
             <div class='form-group'>
-              <%= f.label :content %><br>
               <%= f.cktext_area :content, :ckeditor => {language: 'en', toolbar: 'comment'}, required: true, class: 'form-control', placeholder:'Your comments/questions' %>
             </div>
             <div class='actions'>
@@ -47,7 +45,8 @@
     <div id="sidebar" class="col-sm-3">
       <p class="text-justify">
         Get the latest on health benefits of foods, fruits and fruit juices.
-        <% link_to 'Contact us', new_contact_path %> if you have any information to add. The information will be credited to you.
+        <% link_to 'Contact us', new_contact_path %> Please contact us if you have any information to add.
+        The information will be credited to you.
       </p>
       <h2>Recent Posts</h2>
       <ul>

@@ -14,19 +14,16 @@
     <div class="row">
       <div class="col-sm-6">
         <div class="form-group">
-          <%= f.label :title %><br>
           <%= f.text_field :title, class:'form-control', placeholder:'Post title', required: true %>
         </div>
       </div>
       <div class="col-sm-6">
         <div class="form-group">
-          <%= f.label :author %><br>
           <%= f.text_field :author, class:'form-control', placeholder:'Author', required: true %>
         </div>
       </div>
     </div>
     <div class="field">
-      <%= f.label :content %><br>
       <%= f.cktext_area :content, :ckeditor => {:language => 'en'}, required: true %>
     </div>
     <div class="actions">
